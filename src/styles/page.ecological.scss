@@ -1,0 +1,41 @@
+.page-ecological {
+  background: #fff;
+  color: #333;
+  font-size: 30px;
+  padding-top: 168px;
+  box-sizing: border-box;
+  color: #333;
+  font-size: 18px;
+}
+.ecological>div {
+  float: left;
+}
+.ecological-map {
+  width: 503px;
+  height: 752px;
+  box-shadow: 0px 0px 25px rgba(0,0,0,0.4);
+  background:  url('./assets/img/shengtai1.png') no-repeat center;
+}
+.ecological-user {
+  width: 600px;
+  margin-left: 57px;
+  margin-top: 112px;
+  padding-bottom: 100px;
+}
+.ecological-title {
+  height: 145px;
+  background: url('./assets/img/user.png') no-repeat center;
+  background-size: contain;
+  margin-bottom: 80px;
+}
+.ecological-title-en {
+  background: url('./assets/img-en/user.png') no-repeat center;
+  background-size: contain;
+}
+.ecological-main p{
+  line-height: 30px;
+  padding-left: 30px;
+}
+.ecological-main p:nth-child(2){
+  margin: 40px 0;
+}

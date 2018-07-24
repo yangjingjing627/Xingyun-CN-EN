@@ -1,0 +1,36 @@
+.mt74 {
+  height: 74px;
+  background: white;
+}
+.page12 {
+  background-color: white;
+  color: #333;
+  text-align: center;
+}
+.page12-bg1 {
+  width: 174px;
+  height: 80px;
+  margin: 0px auto;
+  padding-top: 74px;
+  background: url('./assets/img/yuanjing.png') no-repeat center;
+  background-size: contain;
+}
+.page12-bg1-en {
+  background: url('./assets/img-en/yuanjing.png') no-repeat center;
+  background-size: contain;
+}
+.margin-con {
+  margin: 64px auto 26px;
+}
+.page12-con p{
+  text-align: center;
+  line-height: 30px;
+  padding: 0 50px;
+}
+.yuanjing-bg {
+  /*width: 400px;*/
+  height: 288px;
+  margin: 0 auto;
+  background: url('./assets/img/yuanjing-bg1.png') no-repeat center;
+  /*background-size: contain;*/
+}

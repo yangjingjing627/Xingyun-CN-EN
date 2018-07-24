@@ -1,0 +1,60 @@
+.page13 {
+  height: 650px;
+  background-color: #E9EFF4;
+}
+.page13-w1200 {
+  padding-top: 96px;
+  position: relative;
+}
+.page13-line {
+  position: absolute;
+  width: 3px;
+  height: 327px;
+  border-left: 3px solid #000000;
+  left: 0;
+  top: 48px;
+}
+.page13-bg {
+  width: 553px;
+  height: 80px;
+  margin: 0px auto;
+  padding-top: 74px;
+  background: url('./assets/img/moshi.png') no-repeat center;
+  background-size: contain;
+}
+.page13-bg {
+  background: url('./assets/img-en/moshi.png') no-repeat center;
+  background-size: contain;
+}
+.page13-border {
+  border-top: 5px solid #000;
+  width: 94px;
+  margin-top: 90px;
+}
+.page13-con>div {
+  float: left;
+  font-size: 14px;
+}
+.page13-con>div:nth-child(1) {
+  width: 60%;
+  padding-left: 80px;
+}
+.icon1, .icon2 {
+  width: 42px;
+  height: 42px;
+  margin-top: 15px;
+  background: url('./assets/img/icon1.png') no-repeat left center;
+  background-size: contain;
+}
+.icon2 {
+  margin-top: 20px;
+  background: url('./assets/img/icon2.png') no-repeat left center;
+  background-size: contain;
+}
+.p_bg {
+  margin-top: 90px;
+  width: 360px;
+  height: 335px;
+  background: url('./assets/img/p.png') no-repeat center;
+  background-size: contain;
+}

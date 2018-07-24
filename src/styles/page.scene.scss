@@ -1,0 +1,64 @@
+.page-scene {
+  height: 780px;
+  background: #fff url('./assets/img/scene.png') no-repeat center top;
+  background-size: 100% 580px;
+}
+.scene {
+  position: relative;
+}
+.scene .st {
+  position: absolute;
+  top: -130px;
+  left: 50%;
+  width: 610px;
+  height: 90px;
+  transform: translateX(-50%);
+  background: url('./assets/img/shengtai2.png') no-repeat center top;
+  /*background-size: 566px 90px;*/
+}
+.scene .st-en {
+  background: url('./assets/img-en/shengtai2.png') no-repeat center top;
+}
+.scene>div {
+  width: 294px;
+  height: 480px;
+  margin: 210px auto 0;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0px 0px 57px rgba(0,0,0,0.1);
+}
+.scene-img {
+  height: 182px;
+  margin-bottom: 20px;
+}
+.xiaofei {
+  background: #fff url('./assets/img/xiaofei.png') no-repeat center;
+  background-size: cover;
+}
+.xindai {
+  background: #fff url('./assets/img/xindai.png') no-repeat center;
+  background-size: cover;
+}
+.meiti {
+  background: #fff url('./assets/img/mouti.png') no-repeat center;
+  background-size: cover;
+}
+.scene-title {
+  font-size: 14px;
+  color: #333;
+  padding: 0 26px;
+}
+.scene-intro {
+  font-size: 14px;
+  color: #666;
+  margin-top: 20px;
+  padding: 0 26px;
+  line-height: 24px;
+}
+.scene-intro-en {
+  font-size: 14px;
+  color: #666;
+  margin-top: 16px;
+  padding: 0 2px;
+  line-height: 20px;
+}
