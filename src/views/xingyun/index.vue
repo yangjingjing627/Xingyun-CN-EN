@@ -155,7 +155,7 @@
     				<p v-if='showCN'>300个城市超过40万本地商户、1000多个停车场的交易场景将建立在QOS平台之上，合计月交易流水超过60亿元，交易笔数超过3000万笔，平台将触达5000万以上的交易用户，每月将产生超过20亿元的借贷需求。</p>
     				<p v-if='showCN'>未来会不断孵化、接纳例如出行、外卖、快递、社交服务商。</p>
             <p v-if='!showCN'>The QOS blockchain Eco has been joined payment company, commercial bank, internet finance, and new media company as a cooperative scene service provider.</p>
-            <p v-if='!showCN'>The business scenario, such as more than 400,000 local merchants and more than 1,000 parking lots in 300 cities, will be built on the QOS platform in the near future. The total monthly transaction flow exceeds 6 billion RMB, the number of transactions exceeds 30 million, and the platform will connect more than 50 million transaction users, and generate more than $2 billion lending needs each month.</p>
+            <p v-if='!showCN'>The business scenario, such as more than 400,000 local merchants and more than 1,000 parking lots in 300 cities, will be built on the QOS platform in the near future. The total monthly transaction flow exceeds 6 billion RMB, the number of transactions exceeds 30 million, and the platform will connect more than 50 million transaction users, and generate more than ¥2 billion lending needs each month.</p>
             <p v-if='!showCN'>In the future, we will continue to add more business scenarios on QOS platform, for example, travel, takeaway, express delivery, and social service providers.</p>
     			</div>
     		</div>
@@ -175,7 +175,7 @@
           </p>
     			<p v-if='showCN' class='scene-title'>生态服务商：钱包生活、停车钱包等</p>
     			<p v-if='showCN' class='scene-intro'>中国超过85%的零售交易发生在线下，是一个规模33万亿的交易市场。乾元社区将第一个应用场景选择为线下消费，而合作的支付服务商也意识到传统集中式的交易服务所隐含的数据风险、隐私风险，正在积极推动商户、用户、场景向区块链产业转型。 </p>
-          <p v-if='!showCN' class='scene-title'>Eco service providers: Qianbao card, Qianbao parking, etc.</p>
+          <p v-if='!showCN' class='scene-title'>Eco service providers: Qianbao Card, Qianbao Parking, etc.</p>
           <p v-if='!showCN' class='scene-intro-en'>In China, more than 85% retail transactions take place in the offline scene, which is about 33 trillion trading market. Qianyuan Community has chosen the first application scenario as the offline consumption, and the cooperative payment service providers, merchants, users and scenarios are actively promoting the blockchain industries because of the data risk and privacy risk under the traditional centralized transaction services.</p>
     		</div>
     		<div class="">
@@ -186,7 +186,7 @@
           </p>
     			<p  v-if='showCN' class='scene-title'>生态服务商：钱包金融、钱包好车、长治银行等</p>
     			<p  v-if='showCN' class='scene-intro'>中国的借贷市场极其广阔，社会融资规模存量156万亿，其中网络信贷规模2.2万亿元，乾元社区将从多个方面改变传统信贷业务 。 </p>
-          <p v-if='!showCN' class='scene-title'>Eco-service providers: Qianbao Finance, Qianbao Car credit, Changzhi Bank, etc.</p>
+          <p v-if='!showCN' class='scene-title'>Eco-service providers: Qianbao Finance, Qianbao Car Credit, Changzhi Bank, etc.</p>
           <p v-if='!showCN' class='scene-intro-en'>In China, lending market is extremely broad. The scale of social financing is about 156 trillion RMB, and the internet credit scale is 2.2 trillion RMB. The Qianyuan community will change the traditional credit business from many aspects.</p>
     		</div>
     		<div class="">
