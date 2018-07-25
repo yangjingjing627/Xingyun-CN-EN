@@ -42,7 +42,7 @@
     		<p v-if='showCN'>同的社区群体。QOS公链致力成为全球覆盖人口最多的区块链应用社区，实现广泛的社会价值、经济价值。</p>
         <p v-if='!showCN'>We convince that the QOS public blockchain can fill the market vacancy of mainstream public blockchains, such as Bitcoin and Ethereum, and take the lead in applying blockchain technology to the real economy in order to achieve the commercial service levels and serve communities, which completely different from the currency groups. The QOS public blockchain is committed to becoming the most populous blockchain application community, and achieve a wide range of social and economic values.</p>
     	</div>
-    	<div class="yuanjing-bg"></div>
+    	<div v-bind:class="{ 'yuanjing-bg': showCN, 'yuanjing-bg-en': !showCN }"></div>
     </div>
     <!-- page1 -->
     <div class="page page1">
@@ -85,8 +85,7 @@
     <div class="page13 page13-w1200">
     	<div class="w1200">
     		<div class="page13-line"></div>
-    		<div v-if='showCN' class="page13-bg"></div>
-        <div v-if='!showCN' class="page13-bg page13-bg-en"></div>
+    		<div v-bind:class="{ 'page13-bg': showCN, 'page13-bg-en': !showCN }"></div>
 
     		<div class="clearfloat page13-con">
     			<div class="">
@@ -126,7 +125,7 @@
     		<p v-if='showCN'>竞争挖矿，在各个场景由“价值交换即挖矿”。</p>
         <p v-if='!showCN'>Corresponding to the double-layer token model, the QOS community establishes a double-layer mining mechanism. In the bottom of QOS public blockchain, 21 block producers compete for mining, and in each scenario "value exchange is mining".</p>
     	</div>
-    	<div class="page14-bg"></div>
+    	<div v-bind:class="{ 'page14-bg': showCN, 'page14-bg-en': !showCN }"></div>
     </div>
     <!-- page-dframe -->
     <div class="page-dframe">
@@ -145,7 +144,7 @@
     <!-- page-ecological -->
     <div class="page-ecological">
     	<div class="w1200 clearfloat ecological">
-    		<div class="ecological-map"></div>
+    		<div v-bind:class="{ 'ecological-map': showCN, 'ecological-map-en': !showCN }"></div>
     		<div class="ecological-user">
     			<p v-if='showCN' class='ecological-title'></p>
           <p v-if='!showCN' class='ecological-title ecological-title-en'></p>
@@ -401,7 +400,7 @@
     </div>
     <!-- corporation -->
     <div class="corporation">
-    	<div class="corporation-title"></div>
+    	<div v-bind:class="{ 'corporation-title': showCN, 'corporation-title-en': !showCN }"></div>
     	<div class="">
     		<p v-if='showCN' class='subtitle'>场景生态<span></span></p>
         <p v-if='!showCN' class='subtitle'>Scene Ecology<span></span></p>
@@ -415,12 +414,17 @@
     		<h1 class='logo1 logo2'></h1>
     	</div>
     	<div class="">
-    		<h1 class='logo1 logo3'></h1>
+    		<h1 class='logo1' v-bind:class="{ 'logo3': showCN, 'logo3-en': !showCN }"></h1>
+    	</div>
+      <div class="">
+    		<p v-if='showCN' class='subtitle'>投资机构<span></span></p>
+        <p v-if='!showCN' class='subtitle'>Investors<span></span></p>
+    		<h1 class='logo1 logo4'></h1>
     	</div>
     </div>
     <!-- connect-email -->
     <div class="connect-email">
-    	<div class="corporation-title connection"></div>
+    	<div class="corporation-title" v-bind:class="{ 'connection': showCN, 'connection-en': !showCN }"></div>
     	<div class="clearfloat connect-main">
     		<ul class="l">
     			<li class='ico1'>

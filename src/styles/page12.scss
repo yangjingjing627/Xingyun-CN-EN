@@ -28,9 +28,12 @@
   padding: 0 50px;
 }
 .yuanjing-bg {
-  /*width: 400px;*/
-  height: 288px;
+  height: 310px;
   margin: 0 auto;
   background: url('./assets/img/yuanjing-bg1.png') no-repeat center;
-  /*background-size: contain;*/
+}
+.yuanjing-bg-en {
+  height: 310px;
+  margin: 0 auto;
+  background: url('./assets/img-en/yuanjing-bg1.png') no-repeat center;
 }
