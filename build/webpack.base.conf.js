@@ -2,10 +2,16 @@ var path = require('path')
 var utils = require('./utils')
 var config = require('../config')
 var vueLoaderConfig = require('./vue-loader.conf')
+import px2rem from 'postcss-px2rem'
 
 function resolve(dir) {
   return path.join(__dirname, '..', dir)
 }
+
+// 自动转 rem 配置 @see https://www.npmjs.com/package/postcss-px2rem  https://www.npmjs.com/package/px2rem
+// 设计图的总宽度是以750px为标准，则填写75；如果是375px，则填写37.5；以此类推
+let px2remConfig = { remUnit: 37.5 }
+let postcssOptions = [px2rem(px2remConfig)]
 
 module.exports = {
   entry: {
