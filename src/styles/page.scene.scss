@@ -1,6 +1,6 @@
 .page-scene {
   height: 780px;
-  background: #fff url('./assets/img/scene.png') no-repeat center top;
+  background: #fff url('./assets/img/scene.png') no-repeat center center top;
   background-size: 100% 580px;
 }
 .scene {
@@ -13,11 +13,11 @@
   width: 610px;
   height: 90px;
   transform: translateX(-50%);
-  background: url('./assets/img/shengtai2.png') no-repeat center top;
+  background: url('./assets/img/shengtai2.png') no-repeat center center top;
   /*background-size: 566px 90px;*/
 }
 .scene .st-en {
-  background: url('./assets/img-en/shengtai2.png') no-repeat center top;
+  background: url('./assets/img-en/shengtai2.png') no-repeat center center top;
 }
 .scene>div {
   width: 294px;
@@ -32,15 +32,15 @@
   margin-bottom: 20px;
 }
 .xiaofei {
-  background: #fff url('./assets/img/xiaofei.png') no-repeat center;
+  background: #fff url('./assets/img/xiaofei.png') no-repeat center center;
   background-size: cover;
 }
 .xindai {
-  background: #fff url('./assets/img/xindai.png') no-repeat center;
+  background: #fff url('./assets/img/xindai.png') no-repeat center center;
   background-size: cover;
 }
 .meiti {
-  background: #fff url('./assets/img/mouti.png') no-repeat center;
+  background: #fff url('./assets/img/mouti.png') no-repeat center center;
   background-size: cover;
 }
 .scene-title {

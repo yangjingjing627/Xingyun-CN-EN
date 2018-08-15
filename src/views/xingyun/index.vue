@@ -3,10 +3,16 @@
   <!-- 导航 -->
   <div class="nav opacity_7">
   	<ul class="clearfloat">
-  		<li v-if='showCN' class='bg'>首页</li>
-      <li v-if='!showCN' class='bg'>Home</li>
+  		<li v-if='showCN'>首页</li>
+      <li v-if='!showCN'>Home</li>
+      <li v-if='showCN'>公告</li>
+      <li v-if='!showCN'>Notice</li>
   		<li v-if='showCN' @click="downloadFile('QOS白皮书-V0.6.pdf', 'static/QOS-V0.6.pdf')">白皮书下载</li>
-      <li v-if='!showCN' @click="downloadFile('QOS白皮书-V0.6.pdf', 'static/QOS-V0.6.pdf')">Whitepaper</li>
+      <li v-if='!showCN' @click="downloadFile('QOSWhitepaper-V0.6.pdf', 'static/QOS-V0.6-en.pdf')">Whitepaper</li>
+      <!-- <li @click=''>
+        <a v-if='showCN' href='https://fundraising.qoschain.io' target="_blank">点击参与募资</a>
+        <a v-if='!showCN' href='https://fundraising.qoschain.io' target="_blank">Fundraising</a>
+      </li> -->
       <li @click='isShowCN'>
         <span v-if='!showCN'>CN</span>
         <span v-if='showCN'>EN</span>
@@ -15,15 +21,55 @@
   </div>
   <div class="containter">
     <!-- 第一页 -->
-    <div class="page current relative">
+    <div class="page current relative page0">
     	<div class="qos-logo"></div>
-    	<div class="absolute top57">
+    	<div class="absolute bottom300">
     		<p class="logo"></p>
     		<p v-if='showCN' class="mt35 white f36 text-center">下一代企业级应用社区</p>
         <p v-if='!showCN' class="mt35 white f36 text-center">QOS：Next generation Enterprise Application Community</p>
     	</div>
     	<img class="bg-sglobal" :src="global" alt="">
     	<img class="bg-bglobal" :src="global" alt="">
+      <el-row :gutter="30" class='notices'>
+        <el-col :span="12" style="height: 100%;">
+          <el-row class='news' :gutter="10" style="height: 100%;">
+            <el-col :span="9"  v-if='showCN'>
+              <div class="borTop4 fr">
+                <p class='titleA'>News</p>
+                <p class='titleA1'>新闻</p>
+              </div>
+            </el-col>
+            <el-col :span="15" class='con'>
+              <div class='scroll' v-if='showCN'>
+                <p class="ellipsis"><span class='titleB'>【FCOIN】</span><a target="_blank" href="https://support.fcoin.com/hc/zh-cn/articles/360007650334?from=groupmessage&isappinstalled=0">FCoin上线 QOS/ETH 交易的公告</a></p>
+                <p class="ellipsis"><span class='titleB'>【火星财经】</span><a target="_blank" href="http://www.huoxing24.com/liveNewsDetail/20180726185401075089.html">QOS与FCoin、钱包生活、DUDU Chain达成战略合作意向，四方合作推进业务场景落地，并进行用户联合运营</a></p>
+                <p class="ellipsis"><span class='titleB'>【耳朵财经】</span><a target="_blank" href="http://www.iterduo.com/kuaixun/69991.html">QOS私募首日战绩喜人，获节点、歌者等10余家明星资本认购</a></p>
+                <p class="ellipsis"><span class='titleB'>【深链财经】</span><a target="_blank" href="https://www.shenliancaijing.com/portal/activity/activedetail.html?id=1022">QOS申请成为FCoin币改首发项目 除歌者资本、节点资本外再受八维资本认可</a></p>
+                <p class="ellipsis"><span class='titleB'>【火星财经】</span><a target="_blank" href="http://www.huoxing24.com/liveNewsDetail/20180723190427394877.html">QOS申请成为FCoin币改首发项目 同时获歌者资本、节点资本认可</a></p>
+              </div>
+            </el-col>
+          </el-row>
+        </el-col>
+        <el-col :span="12" style="height: 100%;">
+          <el-row class='news' :gutter="20" style="height: 100%;">
+            <el-col :span="9" v-if='showCN'>
+              <div class="borTop4 fr">
+                <p class='titleA'>Notice</p>
+                <p class='titleA1'>公告</p>
+              </div>
+            </el-col>
+            <el-col :span="15" class='con'>
+              <div class='scroll' v-if='showCN'>
+                <p @click='getNotice("20180805")' class='newest ellipsis' style="cursor: pointer;"><b>NEW</b><span class='titleB'>【QOS最新公告】</span><span>QOS、小视科技、FCoin达成战略合作 推进传统行业通证化转型 </span></p>
+                <p @click='getNotice("20180804")' class='ellipsis' style="cursor: pointer;"><span class='titleB'>【公告】</span><span>关于QOS正式上线FCoin交易所的公告</span></p>
+                <p @click='getNotice("20180803_2")' class='ellipsis' style="cursor: pointer;"><span class='titleB'>【公告】</span><span>QOS/ETH上线FCoin交易的公告</span></p>
+                <p @click='getNotice("20180803_1")' class='ellipsis' style="cursor: pointer;"><span class='titleB'>【公告】</span><span>QOS与FCoin、PinjamanGo达成战略合作意向，共同在印度尼西亚推进小微信贷业务</span></p>
+                <p @click='getNotice("20180731")' class='ellipsis' style="cursor: pointer;"><span class='titleB'>【公告】</span><span>QOS发行情况说明</span></p>
+              </div>
+            </el-col>
+          </el-row>
+        </el-col>
+      </el-row>
     </div>
     <!-- height:74 -->
     <div class="mt74"></div>
@@ -514,9 +560,16 @@ export default {
     isShowCN() {
       if (this.showCN) {
         this.showCN = false
+        console.log('--------')
+        // document.getElementsByTagName('title').innerText = 'jsfndjfndjfd'
+        document.title = 'QOS：Next generation Enterprise Application Community'
       } else {
         this.showCN = true
+        document.title = 'QOS：下一代企业级应用社区'
       }
+    },
+    getNotice(n) {
+      this.$router.push({ path: '/announcement/' + n })
     },
     isIE() {
       var explorer = window.navigator.userAgent
@@ -536,6 +589,9 @@ export default {
         aLink.href = url
         aLink.dispatchEvent(evt)
       }
+    },
+    goToAnnouncements() {
+      this.$router.push({ path: '/announcement' })
     },
     showProfileZhe() {
       this.isRightZhe = true

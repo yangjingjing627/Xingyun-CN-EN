@@ -1,0 +1,63 @@
+.page0 {
+  .notices {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    height: 16%;
+    color: #D1DFFF;
+    font-size: 14px;
+    line-height: 25px;
+    .titleA {
+      font-size: 48px;
+      color: #fff;
+      line-height: 58px;
+      text-align: right;
+    }
+    .titleA1 {
+      color: #fff;
+      font-size: 24px;
+      text-align: right;
+    }
+    .titleB {
+      color: #fff;
+    }
+    .ellipsis {
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+    }
+    .borTop4 {
+      border-top: 4px solid #fff;
+    }
+    .fr {
+      float: right;
+      width: 150px;
+    }
+    .con {
+      height: 100%;
+      overflow-y: hidden;
+      .scroll {
+        height: 100%;
+        overflow-y: scroll;
+      }
+    }
+    // p:not(.newest) {
+    //   text-overflow: ellipsis;
+    //   overflow: hidden;
+    //   white-space: nowrap;
+    // }
+    .newest {
+      color: #fff;
+      b {
+        display: inline-block;
+        padding: 0px 4px;
+        background: #f66;
+        border-radius: 12px;
+      }
+      a {
+        color: #fff;
+      }
+    }
+  }
+}

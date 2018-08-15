@@ -16,25 +16,24 @@ import Layout from '../views/layout/Layout'
 * meta : { role: ['admin'] }  will control the page role
 **/
 export const constantRouterMap = [
-    { path: '/login', component: _import('login/index'), hidden: true },
-    { path: '/authredirect', component: _import('login/authredirect'), hidden: true },
-    { path: '/404', component: _import('errorPage/404'), hidden: true },
-    { path: '/401', component: _import('errorPage/401'), hidden: true },
   {
     path: '/',
     component: Layout,
     redirect: '/xingyun',
     name: '首页',
     hidden: true,
-    children: [{ path: 'xingyun', component: _import('xingyun/index') }]
-  },
-  {
-    path: '/introduction',
-    component: Layout,
-    redirect: '/introduction/index',
-    icon: 'people',
-    noDropdown: true,
-    children: [{ path: 'index', component: _import('introduction/index'), name: '简述' }]
+    children: [
+      { path: 'xingyun', component: _import('xingyun/index') },
+      { path: 'announcement/20180720', component: _import('xingyun/notice1') },
+      { path: 'announcement/20180721', component: _import('xingyun/notice2') },
+      { path: 'announcement/20180725', component: _import('xingyun/notice3') },
+      { path: 'announcement/20180726', component: _import('xingyun/notice4') },
+      { path: 'announcement/20180731', component: _import('xingyun/notice5') },
+      { path: 'announcement/20180803_1', component: _import('xingyun/notice6') },
+      { path: 'announcement/20180803_2', component: _import('xingyun/notice7') },
+      { path: 'announcement/20180804', component: _import('xingyun/notice8') },
+      { path: 'announcement/20180805', component: _import('xingyun/notice9') }
+    ]
   }
 ]
 
@@ -45,22 +44,25 @@ export default new Router({
 })
 
 export const asyncRouterMap = [
+  // {
+  //   path: '/permission',
+  //   component: Layout,
+  //   redirect: '/permission/index',
+  //   name: '权限测试',
+  //   icon: 'lock',
+  //   meta: { role: ['admin'] },
+  //   noDropdown: true,
+  //   children: [{ path: 'index', component: _import('permission/index'), name: '权限测试页', meta: { role: ['admin'] }}]
+  // },
   {
-    path: '/permission',
+    path: '/notice',
     component: Layout,
-    redirect: '/permission/index',
-    name: '权限测试',
-    icon: 'lock',
-    meta: { role: ['admin'] },
-    noDropdown: true,
-    children: [{ path: 'index', component: _import('permission/index'), name: '权限测试页', meta: { role: ['admin'] }}]
-  },
-  {
-    path: '/icon',
-    component: Layout,
-    icon: 'icon',
-    noDropdown: true,
-    children: [{ path: 'index', component: _import('svg-icons/index'), name: 'icons' }]
+    redirect: '/notice/index',
+    name: '公告',
+    children: [
+      { path: 'index', component: _import('xingyun/notice1'), name: '公告' },
+      { path: 'mixchart', component: _import('charts/mixChart'), name: '混合图表' }
+    ]
   },
   {
     path: '/components',

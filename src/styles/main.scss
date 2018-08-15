@@ -85,7 +85,7 @@ textarea {
   height: 212px;
   margin: 0 auto;
   color: #fff;
-  background: url('./assets/img/logo.png') no-repeat center;
+  background: url('./assets/img/logo.png') no-repeat center center;
   background-size: 100% 100%;
 }
 .white {
@@ -116,8 +116,8 @@ textarea {
 .f16 {
   font-size: 16px;
 }
-.top57 {
-  top: 57%;
+.bottom300 {
+  top: 49%;
 }
 .f24 {
   font-size: 24px;

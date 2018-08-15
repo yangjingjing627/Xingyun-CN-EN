@@ -12,23 +12,27 @@ a {
 .page {
   width: 100%;
   height: 90%;
-  background: url('./assets/img/bg1.png') no-repeat center;
+  background: url('./assets/img/bg1.png') no-repeat center center;
   background-size: 100% 100%;
 }
 
+.page0 {
+height: 100%; 
+}
+
 .page1 {
-  background: url('./assets/img/bg6.png') no-repeat center;
+  background: url('./assets/img/bg6.png') no-repeat center center;
   background-size: cover;
 }
 
 .page2 {
-  background: url('./assets/img/bg33.png') no-repeat center;
+  background: url('./assets/img/bg33.png') no-repeat center center;
   background-size: 100% 100%;
   height: 90%;
 }
 
 .page3 {
-  background: url('./assets/img/b2.png') no-repeat center;
+  background: url('./assets/img/b2.png') no-repeat center center;
   padding-bottom: 130px;
   padding-top: 100px;
 }
@@ -78,14 +82,13 @@ a {
 }
 
 .nav ul {
-  width: 300px;
-  margin: 0 auto;
+  margin-right: 30px;
   float: right;
 }
 
 .nav li {
   float: left;
-  margin: 40px 15px;
+  padding: 40px 15px;
   cursor: pointer;
   opacity: 1;
   filter: opacity(alpha=100);
@@ -107,7 +110,7 @@ a {
   position: absolute;
   left: 20%;
   top: 40px;
-  background:  url('./assets/img/qos-logo.png') no-repeat center;
+  background:  url('./assets/img/qos-logo.png') no-repeat center center;
   background-size: cover;
 }
 
@@ -135,16 +138,16 @@ a {
   border: 7px solid #fff;
   width: 51px;
   height: 7px;
-  left: 40%;
-  top: 130px;
+  left: 30%;
+  top: 100px;
 }
 .page1-content {
   position: absolute;
   font-size: 16px;
   line-height: 28px;
-  left: 40%;
-  top: 170px;
-  width: 255px;
+  left: 30%;
+  top: 130px;
+  width: 320px;
 }
 .bg-sglobal {
   position: absolute;

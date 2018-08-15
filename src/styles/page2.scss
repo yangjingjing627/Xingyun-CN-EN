@@ -1,8 +1,8 @@
 .page2-w1200 {
-  background: url('./assets/img/licheng.png') no-repeat center 104px;
+  background: url('./assets/img/licheng.png') no-repeat center center 104px;
 }
 .page2-w1200-en {
-  background: url('./assets/img-en/licheng.png') no-repeat center 104px;
+  background: url('./assets/img-en/licheng.png') no-repeat center center 104px;
 }
 .page2-circle {
   width: 40%;
@@ -10,7 +10,7 @@
   position: absolute;
   left: 5%;
   top: 30%;
-  background: url('./assets/img/bg31.png') no-repeat center;
+  background: url('./assets/img/bg31.png') no-repeat center center;
   background-size: contain;
   animation: rotation 20s linear infinite;
   -moz-animation: rotation 20s linear infinite;
